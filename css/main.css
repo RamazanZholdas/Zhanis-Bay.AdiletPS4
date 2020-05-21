@@ -1,0 +1,374 @@
+body{
+	background-color: #4b0937;
+}
+html{
+ 	scroll-behavior: smooth;
+}
+*{
+	padding: 0 auto;
+	margin:0 auto;
+	transition: .2s;
+}
+
+
+.fa-align-justify{
+	font-size: 20px;
+}
+.fa-align-justify:hover{
+	transform:rotate(180deg);
+	color: #00d49d;
+	font-size: 25px;
+}
+#extramenu{
+	text-align: left;
+	margin-left: 5px;
+}
+#extramenu div a{
+	display: none;
+}
+#extramenu:hover div a{
+	display: block;
+}
+#submenu{
+	display: block;
+}
+
+
+
+.header{
+	display: grid;
+	grid-template-columns: 2fr 2fr 1fr;
+	background-color: #4b0937;
+	width: 100%;
+	align-items: center;
+	position: fixed;
+	margin-top: -50px;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0,.7);
+}
+.headitem1{
+	display: flex;
+	align-items: center;
+	margin-left:10px;
+}
+.headitem2{
+	margin-left:10px;
+}
+.headitem3{
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+}
+.headlink{
+	font-size: 15px;
+	color: silver;
+	font-family: Arial Black;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.headlink:hover{
+	color: #01e7c0;
+}
+.fa-playstation{
+	font-size: 50px;
+	color: white;
+}
+.icontext{
+	font-size: 15px;
+	color: white;
+	font-family: Arial Black;
+}
+.avatar{
+	height: 39px;
+}
+.picture{
+	margin-top: 50px;
+	background-image: url(../img/crop-восстановлено.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 760px;
+}
+.maincontent{
+	padding-top: 300px;
+	padding-left: 80px;
+}
+.bigword{
+	font-family: Impact, fantasy;
+	text-transform: uppercase;
+	color: #192534;
+	margin-bottom: 10px;
+	font-size: 60px;
+	text-shadow: 1px 9px 7px gray;
+}
+.btncontact{
+	padding: 10px 15px 10px 15px;
+	font-size: 15px;
+	color: #192534; 
+	background-color: #01e7c0;
+	border-radius: 8px;
+	border-bottom: 3px solid #208d7b;
+	text-decoration: none;
+	font-family: 'Anton', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+.btncontact:hover{
+	border-bottom: 3px solid #01e7c0;
+}
+.btncontact:active{
+	background-color: #208d7b;
+}
+.headerslider h1{
+	text-transform: uppercase;
+	color:#e8e8e8;
+	text-align: center;
+	font-family: Impact, fantasy;
+	margin-bottom: 50px;
+	text-decoration: underline;
+}
+.boxforsliders{
+	display: grid;
+	width: 80%;
+	grid-template-columns: repeat(3,1fr);
+}
+.boxforsliders div{
+	width: 300px;
+	height: 400px;
+	border-radius: 10px;
+	background-color: #192534;
+	margin-bottom: 45px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0,.7);
+	overflow: hidden;
+	text-align: center;
+}
+.boxforsliders div:hover{
+	margin-top: -20px;
+	margin-bottom: -20px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0,.7);
+}
+.imgslider{
+	width: 300px;
+}
+.linkforgame{
+	padding: 10px 15px 10px 15px;
+	font-size: 15px;
+	color: #192534; 
+	background-color: #01e7c0;
+	border-radius: 8px;
+	border-bottom: 3px solid #208d7b;
+	text-decoration: none;
+	font-family: 'Anton', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    display: grid;
+    margin: 30px 20px 10px 20px;
+}
+.linkforgame:hover{
+	background-color: #208d7b;
+	border-bottom: 3px solid #01e7c0;
+}
+
+.footer{
+	margin-top: -5px;
+	background-color: #e8e8e8;
+	padding-bottom: 60px;
+}
+.footerimg{
+	width: 100%;
+}
+.footerlink{
+    font-size: 15px;
+    font-family: arial;
+    text-decoration: none;
+    color: #192534; 
+}
+.footerlink:hover{
+	text-decoration: underline;
+	color: #01e7c0;
+}
+.contentfooter{
+	display: grid;
+	grid-template-columns: repeat(3,2fr);
+}
+.subcontentfoot3{
+	align-self: center;
+	padding-right: 10px;
+}
+.subcontentfoot3 p{
+	font-size: 15px;
+    font-family: arial;
+    color: #192534;
+}
+.subcontentfoot div a{
+	margin-right: 10px;
+	font-family: arial;
+	color: #192534;
+	text-decoration: none;
+}
+
+.fa-vk,.fa-instagram,.fa-whatsapp,.fa-telegram{
+	font-size: 30px;
+}
+.vk:hover{
+	color: #4987c9;
+}
+.insta:hover{
+	color: #d62f82;
+}
+.whats:hover{
+	color: #0cbd2b;
+}
+.telegram:hover{
+	color: #259bd8;
+}
+
+
+
+
+/*для адаптацию=================================================================================================*/
+@media (min-width: 320px) {
+.boxforsliders{
+	grid-template-columns: 1fr;
+}
+.header{
+	margin-top: -80px;
+}
+.picture{
+	margin-top: 80px;
+	height: 460px;
+	margin-bottom: 50px;
+}
+.bigword{
+	color: #e8e8e8;
+	font-size: 45px;
+	text-shadow: 1px 4px 7px black;
+}
+.contentfooter{
+	grid-template-columns: 2fr;
+	grid-gap: 2em;
+}
+.headitem2 a,.headitem3 a{
+	display: none;
+}
+.fa-playstation{
+	font-size: 40px;
+}
+.boxforsliders div:hover{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+}
+@media (min-width: 560px) {
+.maincontent{
+	padding-top: 140px;
+	padding-left: 15px;
+}
+.picture{
+	margin-bottom: 0;
+}
+.bigword{
+	font-size: 40px;
+	color: #192534;
+	text-shadow: 1px 9px 7px gray;
+}
+.contentfooter{
+	grid-gap: 0;
+	grid-template-columns: repeat(3,2fr);
+}
+#extramenu{
+	display: block;
+}
+.boxforsliders div:hover{
+	margin-top: -20px;
+	margin-bottom: -20px;
+}
+}
+@media (min-width: 680px) {
+.boxforsliders{
+	grid-template-columns: repeat(2,1fr);
+	width: 95%;
+}
+.header{
+	margin-top: -50px;
+}
+.picture{
+	margin-top: 50px;
+	height: 450px;
+}
+.bigword{
+	font-size: 40px;
+}
+.maincontent{
+	padding-top: 170px;
+	padding-left: 45px;
+}
+#extramenu{
+	display: none;
+}
+.headitem2 a,.headitem3 a{
+	display: inline;
+}
+.fa-playstation{
+	font-size: 50px;
+}
+}
+@media (min-width: 805px) {
+.boxforsliders{
+	grid-template-columns: repeat(2,1fr);
+	width: 80%;
+}
+.bigword{
+	font-size: 50px;
+}
+.maincontent{
+	padding-top: 220px;
+	padding-left: 40px;
+}
+.picture{
+	height: 660px;
+}
+}
+@media (min-width: 945px) {
+.bigword{
+	font-size: 60px;
+}
+.maincontent{
+	padding-top: 300px;
+	padding-left: 80px;
+}
+}
+@media (min-width: 1205px) {
+	.boxforsliders{
+	grid-template-columns: repeat(3,1fr);
+}
+.picture{
+	height: 760px;
+}
+}
+@media (min-width: 1400px) {
+.fa-playstation{
+	font-size: 60px;
+}
+.icontext{
+	font-size: 25px;
+}
+.headlink{
+	font-size: 20px;
+}
+.avatar{
+	height: 45px;
+}
+.picture{
+	padding-bottom: 200px;
+}
+
+.subcontentfoot div a{
+	font-size: 25px;
+}
+.fa-vk,.fa-instagram,.fa-whatsapp{
+	font-size: 35px;
+}
+.footerlink{
+    font-size: 25px;
+}
+.subcontentfoot3 p{
+	font-size: 25px;
+}
+}
